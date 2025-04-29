@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import perfilPerson from '../assets/images/perfil.jpg';
+---
+<section class="flex items-center">
+    <div class="flex gap-5">
+        <Image src={perfilPerson}  alt="Image the about me" class="w-[15rem] h-[18rem]"/>
+        <div class="grid place-content-center">
+            <h2 class="font-bold text-2xl dark:text-white text-black">Hi, <span class="text-orange-500">developers</span></h2>
+            <p class="w-90 dark:text-white text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat officia quae iure explicabo nam labore suscipit obcaecat1i animi nihil?</p>
+            <!-- Aui van los botones de las redes -->
+        </div>
+    </div>
+</section>
