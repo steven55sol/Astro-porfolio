@@ -3,8 +3,7 @@ import {Image} from 'astro:assets';
 import bannerImage from '../assets/images/img-banner.png'
 ---
 
-<section class="mt-20">
-    <div class="w-7xl max-xl:w-full h-full mx-auto flex items-center justify-center max-xl:flex-col max-xl:flex-col-reverse gap-30 max-xl:gap-15 mb-40">
+<section class="w-7xl max-xl:w-full mx-auto flex items-center justify-center max-xl:flex-col max-xl:flex-col-reverse gap-30 max-xl:gap-15 mb-40 py-20">
         <div class="flex flex-col gap-2 max-sm:p-4">
             <p class="font-poppins font-bold text-3xl text-white max-sm:text-base">Hello, I am</p>
             <p class="font-poppins font-bold text-[6rem] text-orange-500 leading-18 text-shadow-sm text-shadow-yellow-200 max-sm:text-[5rem]">Steven Sol</p>
@@ -14,7 +13,6 @@ import bannerImage from '../assets/images/img-banner.png'
         <div class="relative z-10">
             <Image alt="Mi imagen banner" src={bannerImage} class='w-90 h-90' />
             <div class="after:absolute after:content-[''] after:w-80 after:h-80 after:rounded-full after:bg-gradient-to-br after:from-orange-500 after:to-orange-500 after:blur-3xl after:opacity-60 after:top-7 after:left-4 after:z-[-10]">
+            </div>
         </div>
-        </div>
-    </div>
 </section>
