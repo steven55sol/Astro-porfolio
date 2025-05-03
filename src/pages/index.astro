@@ -2,11 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../layouts/Header.astro';
 import Banner from '../layouts/Banner.astro';
-import Main from '../layouts/Main.astro';
+import About from '../layouts/About.astro';
+
 ---
 
 <Layout title='ArcusCode - Porfolio'>
 	<Header />
 	<Banner />
-	<Main/>
+	<main class="w-7xl max-xl:w-full mx-auto">
+		<About/>
+	</main>
 </Layout>

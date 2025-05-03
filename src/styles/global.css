@@ -4,7 +4,10 @@
 
 html{
     font-family: system-ui, sans-serif;
-    color: #fff,
+}
+
+body{
+    color:#fff;
 }
 
 @theme {

@@ -1,27 +1,22 @@
-<header class="border-b-1 border-gray-900">
-    <section class="w-7xl max-xl:w-full mx-auto flex justify-between items-center px-4 h-19  max-sm:pl-2 max-sm:pr-2">
+---
+import Icon from "../components/Icon.astro";
+---
+<header class="flex justify-between items-center px-4 h-19  max-sm:px-2 dark:bg-gray-950 sticky top-0 z-11 border-b-1 border-gray-900">
         <a href="/" class="flex font-extrabold text-1xl text-gray-800 dark:text-white items-end">
-            <svg width="28" height="28">
-                <use href="/icons/sprites.svg#logo"/>
-            </svg> 
+            <Icon url="/icons/sprites.svg#logo"/> 
             <h1 class="">ArcusCode</h1>
         </a>
         <div class="flex items-center justify-center gap-4">
             <nav class="flex gap-4 text-gray-800 font-bold dark:text-white">
-                <a href="">Home</a>
-                <a href="">Projects</a>
-                <a href="">Blog</a>
+                <a href="/">Home</a>
+                <a href="/">Projects</a>
+                <a href="/">Blog</a>
             </nav>
             <button class="cursor-pointer">
-                <svg width="28" height="28">
-                    <use href="/icons/sprites.svg#sun"/>
-                </svg> 
+                <Icon url="/icons/sprites.svg#sun"/> 
             </button>
-            <button class="cursor-pointer">
-                <svg width="28" height="28" class="hidden">
-                    <use href="/icons/sprites.svg#moon" />
-                </svg>
+            <button class="cursor-pointer hidden">
+                <Icon url="/icons/sprites.svg#moon"/> 
             </button>
         </div>
-    </section>
 </header>

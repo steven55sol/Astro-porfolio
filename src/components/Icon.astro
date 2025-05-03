@@ -1,0 +1,11 @@
+---
+interface Props{
+    url: string
+}
+
+const {url} = Astro.props;
+---
+
+<svg width="28" height="28">
+    <use href={url}/>
+</svg> 

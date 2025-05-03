@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets"
+import Boton from "../components/Botons.astro"
+import Icon from "../components/Icon.astro"
+import Card from "../components/Card.astro"
+import imgAbout from '../assets/images/perfil.jpg'
+---
+<section class="flex gap-2 my-20">
+    <section class="flex flex-1 gap-2 justify-center items-center">
+        <Image class="w-40 h-45" alt="Image About Me" src={imgAbout} />
+        <div class="">
+            <h2 class="text-2xl font-poppins font-bold mb-2 w-auto">
+                Hi, <span class="text-orange-500">Developers!</span></h2>
+            <p class="mb-5 w-[40ch]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos ex maiores cupiditate excepturi eaque.</p>
+            <section class="flex gap-3">
+                <Boton name='Linkedin' color='bg-sky-700' url='/'>
+                    <Icon url="/icons/sprites.svg#Linkedin"/> 
+                </Boton>
+                <Boton name='Github' color='bg-gray-900' url='/'>
+                    <Icon url="/icons/sprites.svg#github"/> 
+                </Boton>
+            </section>
+        </div>
+    </section>
+    <section class="flex-1">
+        <div>
+            <h2 class=" relative text-2xl font-poppins font-bold mb-10 after:content[''] after:absolute after:w-20 after:h-1 after:bg-orange-500 after:-bottom-2 after:left-0">Latest <span class="text-orange-500">Works</span></h2>
+            <div class="grid grid-cols-2  grid-rows-auto gap-2">
+                <!-- Cards -->
+                 <Card title='Nuevo projecto Astro'>
+                    <h3>Hola mundo</h3>
+                </Card>
+                <Card title='Nuevo projecto Astro'>
+                    <h3>Hola mundo</h3>
+                </Card>
+                <Card title='Nuevo projecto Astro'>
+                    <h3>Hola mundo</h3>
+                </Card>
+                <Card title='Nuevo projecto Astro'>
+                    <h3>Hola mundo</h3>
+                </Card>
+
+            </div>
+        </div>
+    </section>
+</section>
