@@ -2,7 +2,7 @@
 import { Image } from "astro:assets"
 import Boton from "../components/Botons.astro"
 import Icon from "../components/Icon.astro"
-import Card from "../components/Card.astro"
+import Card from "../components/Card_projects.astro"
 import imgAbout from '../assets/images/perfil.jpg'
 ---
 <section class="flex gap-2 my-20">
@@ -14,30 +14,38 @@ import imgAbout from '../assets/images/perfil.jpg'
             <p class="mb-5 w-[40ch]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos ex maiores cupiditate excepturi eaque.</p>
             <section class="flex gap-3">
                 <Boton name='Linkedin' color='bg-sky-700' url='/'>
-                    <Icon url="/icons/sprites.svg#Linkedin"/> 
+                    <Icon width={28} height={28} url="/icons/sprites.svg#linkedin"/> 
                 </Boton>
                 <Boton name='Github' color='bg-gray-900' url='/'>
-                    <Icon url="/icons/sprites.svg#github"/> 
+                    <Icon width={28} height={28} url="/icons/sprites.svg#github"/> 
                 </Boton>
             </section>
         </div>
     </section>
     <section class="flex-1">
         <div>
-            <h2 class=" relative text-2xl font-poppins font-bold mb-10 after:content[''] after:absolute after:w-20 after:h-1 after:bg-orange-500 after:-bottom-2 after:left-0">Latest <span class="text-orange-500">Works</span></h2>
-            <div class="grid grid-cols-2  grid-rows-auto gap-2">
+            <h2 class=" relative text-3xl font-poppins font-bold mb-10 after:content[''] after:absolute after:w-15 after:h-1 after:bg-orange-500 after:-bottom-2 after:left-0">My <span class="text-orange-500">Projects</span></h2>
+            <div class="grid grid-cols-2 grid-rows-auto gap-2">
                 <!-- Cards -->
                  <Card title='Nuevo projecto Astro'>
-                    <h3>Hola mundo</h3>
+                    <Icon width={22} height={23} url="/icons/sprites.svg#html"/>
+                    <Icon width={22} height={22} url="/icons/sprites.svg#css3"/>  
+                    <Icon width={22} height={22} url="/icons/sprites.svg#javascript"/> 
                 </Card>
                 <Card title='Nuevo projecto Astro'>
-                    <h3>Hola mundo</h3>
+                    <Icon width={22} height={23} url="/icons/sprites.svg#html"/>
+                    <Icon width={22} height={22} url="/icons/sprites.svg#css3"/>  
+                    <Icon width={22} height={22} url="/icons/sprites.svg#javascript"/> 
                 </Card>
                 <Card title='Nuevo projecto Astro'>
-                    <h3>Hola mundo</h3>
+                    <Icon width={22} height={23} url="/icons/sprites.svg#html"/>
+                    <Icon width={22} height={22} url="/icons/sprites.svg#css3"/>  
+                    <Icon width={22} height={22} url="/icons/sprites.svg#javascript"/> 
                 </Card>
                 <Card title='Nuevo projecto Astro'>
-                    <h3>Hola mundo</h3>
+                    <Icon width={22} height={23} url="/icons/sprites.svg#html"/>
+                    <Icon width={22} height={22} url="/icons/sprites.svg#css3"/>  
+                    <Icon width={22} height={22} url="/icons/sprites.svg#javascript"/> 
                 </Card>
 
             </div>

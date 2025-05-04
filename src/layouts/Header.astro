@@ -3,7 +3,7 @@ import Icon from "../components/Icon.astro";
 ---
 <header class="flex justify-between items-center px-4 h-19  max-sm:px-2 dark:bg-gray-950 sticky top-0 z-11 border-b-1 border-gray-900">
         <a href="/" class="flex font-extrabold text-1xl text-gray-800 dark:text-white items-end">
-            <Icon url="/icons/sprites.svg#logo"/> 
+            <Icon width={28} height={28} url="/icons/sprites.svg#logo"/> 
             <h1 class="">ArcusCode</h1>
         </a>
         <div class="flex items-center justify-center gap-4">
@@ -13,10 +13,10 @@ import Icon from "../components/Icon.astro";
                 <a href="/">Blog</a>
             </nav>
             <button class="cursor-pointer">
-                <Icon url="/icons/sprites.svg#sun"/> 
+                <Icon width={28} height={28} url="/icons/sprites.svg#sun"/> 
             </button>
             <button class="cursor-pointer hidden">
-                <Icon url="/icons/sprites.svg#moon"/> 
+                <Icon width={28} height={28} url="/icons/sprites.svg#moon"/> 
             </button>
         </div>
 </header>

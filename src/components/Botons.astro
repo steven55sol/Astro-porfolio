@@ -9,7 +9,7 @@ interface Props{
 const {url,name,color} = Astro.props;
 ---
 
-<a href={url} class={`${color} py-2 px-7 rounded-md font-bold flex justifu-center items-center`}>
+<a href={url} class={`${color} py-2 px-7 rounded-md font-bold flex justifu-center items-center gap-2`}>
     <slot />
     <span>{name}</span>
 </a>

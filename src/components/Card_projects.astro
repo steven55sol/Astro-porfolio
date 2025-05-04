@@ -1,0 +1,32 @@
+---
+import Icon from './Icon.astro';
+import { Image } from 'astro:assets';
+import imageCard from '../assets/images/page1.jpg'
+
+interface Props{
+    title: string
+
+}
+
+const {title} = Astro.props;
+---
+
+<article class="relative w-auto h-auto font-bold font-poppins rounded-lg overflow-hidden group cursor-pointer">
+    
+    <Image src={imageCard} alt={title} class="inset-0 w-full rounded-lg group-hover:scale-125 transition-transform duration-300 ease-out"/>
+    
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent from-0% to-slate-900/90 to-80% rounded-lg ">
+    </div>
+    
+    <section class=" absolute flex flex-row justify-between bottom-4 px-3 w-full">
+        <h2 class="absolute bottom-10">{title}</h2>
+        <div class="flex items-center gap-2">
+            <slot />
+        </div>
+        <a href="/" class="px-2 py-0.5 rounded-sm bg-orange-500 flex items-center justify-center gap-1 ">
+            Demo
+            <Icon width={28} height={28} url='/icons/sprites.svg#preview'/>
+        </a>    
+    </section>
+
+</article>

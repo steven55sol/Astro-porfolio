@@ -1,11 +1,13 @@
 ---
 interface Props{
     url: string
+    width: number
+    height: number
 }
 
-const {url} = Astro.props;
+const {url,width,height} = Astro.props;
 ---
 
-<svg width="28" height="28">
+<svg width={width} height={height}>
     <use href={url}/>
 </svg> 
