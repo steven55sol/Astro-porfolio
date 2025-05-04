@@ -1,6 +1,4 @@
 ---
-import {Image} from 'astro:assets';
-import bannerImage from '../assets/images/img-banner.webp'
 ---
 <section class="flex items-center justify-center max-xl:flex-col max-xl:flex-col-reverse gap-30 max-xl:gap-15 py-20">
         <div class="flex flex-col gap-2 max-sm:p-4">
@@ -9,7 +7,7 @@ import bannerImage from '../assets/images/img-banner.webp'
             <p class="font-poppins font-bold text-3xl text-transparent bg-clip-text max-sm:text-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"># Frontend Developer</p>
         </div>
         <div class="relative z-10">
-            <Image alt="Mi imagen banner" src={bannerImage} class='w-90 h-90' />
+            <img src="../assets/images/img-banner.webp" class='w-90 h-90' loading="lazy" />
             <div class="after:absolute after:content-[''] after:size-70  after:rounded-full after:bg-gradient-to-br after:from-orange-500 after:to-orange-500 after:blur-3xl after:opacity-80 after:top-12 after:left-9 after:z-[-10]">
             </div>
         </div>
