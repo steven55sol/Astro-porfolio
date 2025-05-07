@@ -23,7 +23,7 @@ const {title} = Astro.props;
         <div class="flex items-center gap-2">
             <slot />
         </div>
-        <a href="/" class="px-2 py-0.5 rounded-sm bg-orange-500 flex items-center justify-center gap-1 ">
+        <a href="/" class="px-2 py-0.5 rounded-sm bg-orange-500 flex items-center justify-center gap-1" title={title}>
             Demo
             <Icon width={28} height={28} url='/icons/sprites.svg#preview'/>
         </a>    

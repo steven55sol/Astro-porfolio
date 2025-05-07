@@ -1,0 +1,35 @@
+---
+import CourseCard from "../components/CourseCard.astro"
+---
+
+<section class="py-20">
+    <h2 class="relative text-center text-3xl font-poppins font-bold after:content[''] after:absolute after:w-15 after:h-1 after:bg-orange-500 after:-bottom-2 after:left-4 after:right-4 after:mx-auto">
+        Courses and <span class="text-orange-500">Certifications</span>
+    </h2>
+    <section class="lg:w-4xl lg:mx-auto max-md:grid-cols-1 w-full grid grid-cols-2 grid-rows-2 mt-10 gap-3 px-3 ">
+        <CourseCard 
+            title="Javascript Moderno - Guía completa"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, beatae dolores. Omnis necessitatibus impedit repellat"
+            time={40}
+            teacher="Juan Pablo de la Torre" 
+        />
+        <CourseCard 
+            title="React y TypeScript - Guía Completa"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, beatae dolores. Omnis necessitatibus impedit repellat"
+            time={50}
+            teacher="Juan Pablo de la Torre" 
+        />
+        <CourseCard 
+            title="Node.js - Bootcamp Desarrollo Web inc. MVC y REST APIs"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, beatae dolores. Omnis necessitatibus impedit repellat"
+            time={40}
+            teacher="Juan Pablo de la Torre" 
+        />
+        <CourseCard 
+            title="Desarrollo Web Completo con HTML5, CSS3, JS,  PHP y MySQL"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, beatae dolores. Omnis necessitatibus impedit repellat"
+            time={80}
+            teacher="Juan Pablo de la Torre" 
+        />
+    </section>
+</section>

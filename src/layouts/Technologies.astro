@@ -1,0 +1,19 @@
+---
+import Icon from "../components/Icon.astro"
+---
+
+<section class="py-20">
+    <h2 class="relative text-center text-3xl font-poppins font-bold after:content[''] after:absolute after:w-15 after:h-1 after:bg-orange-500 after:-bottom-2 after:left-4 after:right-4 after:mx-auto">
+        My <span class="text-orange-500">Technologies</span>
+    </h2>
+    <section class="grid grid-cols-6 place-items-center mt-10 p-5 gap-8 md:w-xl md:mx-auto max-md:w-full max-lg:grid-cols-4">
+        <Icon width={48} height={48} url="/icons/sprites.svg#html"/>
+        <Icon width={48} height={48} url="/icons/sprites.svg#css3"/>
+        <Icon width={48} height={48} url="/icons/sprites.svg#javascript"/>
+        <Icon width={48} height={48} url="/icons/sprites.svg#astro"/>
+        <Icon width={48} height={48} url="/icons/sprites.svg#react"/>
+        <Icon width={48} height={48} url="/icons/sprites.svg#tailwind" />
+    </section>
+</section>
+
+

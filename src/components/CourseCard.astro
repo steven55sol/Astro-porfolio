@@ -1,0 +1,24 @@
+---
+import Icon from './Icon.astro'
+
+interface Props{
+    title:string
+    description:string
+    time:number
+    teacher:string
+}
+
+const {title, description, time, teacher} = Astro.props;
+---
+
+<article class="bg-gray-800 px-4 rounded-lg flex justify-center flex-col">
+    <div class="flex justify-end my-5">
+        <Icon width={78} height={28} url='../icons/sprites.svg#udemy' />
+    </div>
+    <h4 class="text-orange-400 font-bold font-poppins text-sm ">{title}</h4>
+    <p class="my-4">{description}</p>
+    <div class="flex justify-between items-center mb-2">
+        <span class="text-cyan-400 font-poppins font-bold">{`+${time} horas`}</span>
+        <span class="text-pink-400 font-poppins font-bold text-sm">{teacher}</span>    
+    </div>
+</article>

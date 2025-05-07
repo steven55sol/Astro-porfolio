@@ -2,15 +2,15 @@
 import {Image} from 'astro:assets';
 import bannerImage from '../assets/images/img-banner.webp'
 ---
-<section class="flex items-center justify-center max-xl:flex-col max-xl:flex-col-reverse gap-30 max-xl:gap-15 py-20">
+<section class="flex items-center justify-center max-lg:flex-col-reverse gap-30 max-xl:gap-15 py-20">
         <div class="flex flex-col gap-2 max-sm:p-4">
             <p class="font-poppins font-bold text-3xl text-black max-sm:text-base dark:text-white">Hello, I am</p>
             <p class="font-poppins font-bold text-[5rem] text-orange-500 leading-18 text-shadow-sm max-sm:text-[5rem]">Steven Sol</p>
             <p class="font-poppins font-bold text-3xl text-transparent bg-clip-text max-sm:text-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"># Frontend Developer</p>
         </div>
         <div class="relative z-10">
-            <Image alt="Mi imagen banner" src={bannerImage} class='w-90 h-90' />
-            <div class="after:absolute after:content-[''] after:size-70  after:rounded-full after:bg-gradient-to-br after:from-orange-500 after:to-orange-500 after:blur-3xl after:opacity-80 after:top-12 after:left-9 after:z-[-10]">
+            <Image alt="Mi imagen banner" src={bannerImage} class='w-90 h-90 max-sm:w-60 max-sm:h-60' />
+            <div class="after:absolute after:content-[''] after:size-70  after:rounded-full after:bg-gradient-to-br after:from-orange-500 after:to-orange-500 after:blur-3xl after:opacity-80 after:top-12 after:left-9 after:z-[-10] max-sm:after:size-60 max-sm:after:left-0 max-sm:after:top-0">
             </div>
         </div>
 </section>
