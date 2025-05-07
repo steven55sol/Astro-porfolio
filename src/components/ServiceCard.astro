@@ -1,0 +1,13 @@
+---
+import type { Servicio } from "../types/Servicio";
+import Icon from "./Icon.astro";
+
+const props = Astro.props as Servicio;
+const { icon, title, description } = props;
+---
+
+<article class="px-4 py-10 rounded-md bg-gray-800 shadow hover:bg-white group">
+    <Icon width={48} height={50} url={icon}/>
+    <h3 class="mt-2 text-2xl font-bold font-poppins group-hover:text-black ">{title}</h3>
+    <p class="relative text-sm text-white mt-1 after:content[''] after:absolute after:w-15 after:h-1 after:bg-orange-500 after:-bottom-2 after:left-0 group-hover:text-gray-800">{description}</p>
+</article>

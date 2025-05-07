@@ -1,0 +1,17 @@
+---
+import { services } from "../data/services";
+import type { Servicio } from "../types/Servicio";
+import ServiceCard from "../components/ServiceCard.astro";
+
+---
+
+<section class="py-20">
+    <h2 class="relative text-center text-3xl font-poppins font-bold after:content[''] after:absolute after:w-15 after:h-1 after:bg-orange-500 after:-bottom-2 after:left-4 after:right-4 after:mx-auto">
+        My <span class="text-orange-500">Services</span>
+    </h2>
+    <section class="grid gap-6 md:grid-cols-3 mt-15">
+        {Object.values(services).map((servicio: Servicio) => (
+          <ServiceCard {...servicio} />
+        ))}
+      </section>
+</section>

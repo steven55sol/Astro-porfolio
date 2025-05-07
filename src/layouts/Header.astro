@@ -7,15 +7,15 @@ import Icon from "../components/Icon.astro";
             <h1 class="">ArcusCode</h1>
         </a>
         <div class="flex items-center justify-center gap-4">
-            <nav class="flex gap-4 text-gray-800 font-bold dark:text-white">
+            <nav class="flex gap-4 text-black font-bold dark:text-white">
                 <a href="/">Home</a>
                 <a href="/">Projects</a>
                 <a href="/">Blog</a>
             </nav>
-            <button class="cursor-pointer">
+            <button class="cursor-pointer" aria-label="mode light">
                 <Icon width={28} height={28} url="/icons/sprites.svg#sun"/> 
             </button>
-            <button class="cursor-pointer hidden">
+            <button class="cursor-pointer hidden" aria-label="mode dark">
                 <Icon width={28} height={28} url="/icons/sprites.svg#moon"/> 
             </button>
         </div>
